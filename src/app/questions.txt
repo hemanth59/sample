@@ -1,0 +1,10 @@
+when to use this. language  ?
+Answer : to access class variable and class functions we use this
+
+In a project which to use first ? is it app.module.ts or app.component.html or app.routing.module.ts
+OR 
+how to rout a new page component ?
+ ng genertate component componentName
+ app.routing.module.ts (path component)
+ if we need create a link in needed a component(header.component.html)
+ 

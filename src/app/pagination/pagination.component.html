@@ -1,0 +1,48 @@
+<p>pagination works!</p>
+
+
+
+<button (click)="setpage(0)">First</button>
+<button (click)="setpage(page-1)">Previous</button>
+<button *ngFor="let eachbutton of pagebuttons" (click)="setpage(eachbutton-1)">{{eachbutton}}</button>
+<!-- <button (click)="setpage(1)">2</button>
+<button (click)="setpage(2)">3</button>
+<button (click)="setpage(3)">4</button>
+<button (click)="setpage(4)">5</button> -->
+<button (click)="setpage(page+1)">next</button>
+<button (click)="setpage(lastpage)">Last</button>
+
+<input type="text">
+    
+    <!-- Apple Symbol -->
+    <i class="fab fa-apple"></i>  
+
+
+
+
+<select id="pagination">
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+    <option value="25">25</option>
+  </select>
+
+<table class="table table-dark">
+    <tr>
+        <th>ID</th>
+        <th>POSTID</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th> BODY</th>
+    </tr>
+    <tr *ngFor="let dat of commands;index as i">
+
+        <td *ngIf=" i>=initial && i<end">{{dat.id}}</td>
+        <td *ngIf=" i>=initial && i<end">{{dat.postId}}</td>
+        <td *ngIf=" i>=initial && i<end">{{dat.name}}</td>
+        <td *ngIf=" i>=initial && i<end">{{dat.email}}</td>
+        <td *ngIf=" i>=initial && i<end">{{dat.body}}</td>
+
+    </tr>
+</table>

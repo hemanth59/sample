@@ -1,0 +1,42 @@
+<!-- <p>signup works!</p>
+<html>
+<head>
+<title> Sign upn Form </title>
+<link rel="stylesheet" href="style.css">
+</head> 
+<body> -->
+
+<i class="fas fa-user-plus"></i>
+<form class="sign-up-form" #hi="ngForm">
+
+
+    <h1> Sign up </h1>
+    <i class="fas fa-user-plus"></i>
+    <!-- <form> -->
+
+    <small *ngIf="hi.controls.username?.errors?.required">
+
+        username is required;
+    </small>
+    <small *ngIf=" hi.controls.username?.errors?.minlength">
+        username should be minimum length of 3;
+    </small>
+    <small *ngIf=" hi.controls.username?.errors?.maxlength">
+        username should not exceed 20 charaters;
+    </small>
+
+
+    <input type="email" class="input-box" class="email" name="username" ngModel placeholder="Your Email"
+        [value]="username" required minlength="3" maxlength="10">
+    <input type="password" class="input-box" class="password" placeholder="Your Password">
+    <input type="confirm password" class="input-box" class="password" placeholder="Confirm Password">
+    <p> <span><input type="checkbox"></span> I agree to terms and condition </p>
+    <a href="/login"> signup</a>
+
+    <button (click)="signup(hi)">SignUp</button>
+
+    <!-- </form> -->
+</form>
+
+<!-- </body>
+</html> -->

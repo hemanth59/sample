@@ -1,0 +1,70 @@
+<p>dummy works!</p>
+<div class="Dummy-form">
+    <h1> Dummy</h1>
+    <!-- <form> -->
+    <!-- <a href="/dummy"> signup</a> -->
+    <button (click)="dummy()">Dummy</button>
+
+    <!-- </form> -->
+</div>
+<div *ngIf="myBoolean">
+    <p>
+        ngifdirectives
+    </p>
+
+</div>
+
+<div [hidden]="myBoolean">
+    <p>
+        hidden directives
+    </p>
+
+</div>
+<div [ngClass]="{'error': myBoolean}">
+    <p>
+        ngclass directives
+    </p>
+</div>
+<div class="styles">
+    <p>
+        styles directives
+    </p>
+
+</div>
+
+<div id="name">
+    <p>
+        name
+    </p>
+</div>
+
+
+
+<div [ngStyle]="{'font-size': myBoolean? '20px': '40px'}">
+    <p>
+        ngstyle directives
+    </p>
+</div>
+
+<div *ngFor="let data of myarray">
+    <p class="error">
+        dummyvalue {{data}};
+    </p>
+</div>
+
+<p>
+    {{ 'HELLO' | lowercase}}
+</p>
+
+<p>
+    {{ 'HELLO' | uppercase}}
+</p>
+<p>
+    {{ 'HELLO' | language}}
+</p>
+<p>
+    {{ 'HELLO' | titlecase}}
+</p>
+<p>
+    {{ 'HELLO' }}
+</p>

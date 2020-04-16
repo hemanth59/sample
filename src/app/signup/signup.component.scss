@@ -1,0 +1,30 @@
+h1 {
+  left: 20px;
+  color: rgba(183, 0, 255, 0.363);
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+form {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: auto;
+  margin-top: 12%;
+  //   margin: 200px;
+  //   center: 50px;
+}
+form .email {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 6px;
+}
+form .password {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 6px;
+}

@@ -1,0 +1,31 @@
+<!-- <img src="chicago.jpg" width="100" height="140"> -->
+
+
+<div class="login-form" [formGroup]="loginForm">
+
+    <h1>Login in Page </h1>
+
+
+    <!-- <form> -->
+    <input type="username" class="name" placeholder="User Name" formControlName="username">
+    <small *ngIf=" loginForm.touched && loginForm.controls.username.errors?.required">
+
+        username is required;
+    </small>
+    <small *ngIf=" loginForm.controls.username.errors?.minlength">
+        username should be minimum length of 3;
+    </small>
+    <small *ngIf=" loginForm.controls.username.errors?.maxlength">
+        username should not exceed 20 charaters;
+    </small>
+
+    <input type="password" formControlName="password" class="password" placeholder="Your Password">
+    <p> <span><input type="checkbox"></span> I agree to terms and condition </p>
+
+    <p class="or"> OR </p>
+    <p>If you dont have an account please ?<a href="/signup"> Sign up</a> </p>
+    <!-- eventbinding -->
+    <button (click)="login()"> <i class="fas fa-sign-in-alt"></i>
+        Login</button>
+    <!-- </form> -->
+</div>

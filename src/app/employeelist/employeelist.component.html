@@ -1,0 +1,26 @@
+<p>employeelist works!</p>
+
+
+<div class="employeelist" *ngFor="let data of  employeeArray ;index as i ">
+  <img id="dummy" src="dummy.jpg" alt="dummy">
+  <p> Name : {{data.Name}} </p>
+  <p> ID : 100 </p>
+  <button (click)="view(i)"> <i class="fas fa-sign-in-alt"></i>View</button>
+
+</div>
+
+<!-- <div class="employeelist">
+  <img id="dummy" src="dummy.jpg" alt="dummy">
+  <p> Name : Bala </p>
+  <p> ID : 101 </p>
+  <button (click)="view()"> <i class="fas fa-sign-in-alt"></i>View</button>
+
+</div>
+
+<div class="employeelist">
+  <img id="dummy" src="dummy.jpg" alt="dummy">
+  <p> Name : Chris </p>
+  <p> ID : 102 </p>
+  <button (click)="view()"> <i class="fas fa-sign-in-alt"></i>View</button>
+
+</div> -->

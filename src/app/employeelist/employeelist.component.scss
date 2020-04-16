@@ -1,0 +1,23 @@
+.employeelist {
+  width: 300px;
+  border: 8px solid rgb(102, 184, 34);
+  padding: 50px;
+  margin: 10px;
+  margin-top: 5%;
+  image-resolution: url("../../assets/dummy.jpg");
+  text-align: center;
+  display: inline-block;
+}
+
+// .column {
+//   float: left;
+//   width: 33.33%;
+//   padding: 5px;
+// }
+
+// /* Clearfix (clear floats) */
+// .row::after {
+//   content: "";
+//   clear: both;
+//   display: table;
+// }
